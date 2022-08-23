@@ -21,7 +21,8 @@
                     case NO_PLAY:
                         break;
                     case LADDER:
-                        presentPosition += numberOnDie;
+                        if (presentPosition + numberOnDie <= 100)
+                            presentPosition += numberOnDie;
                         break;
                     case SNAKE:
                         presentPosition -= numberOnDie;
